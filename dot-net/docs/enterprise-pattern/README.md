@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Patterns from Fowler's *PoEAA* (2002) plus community-driven follow-ons — **Repository**, **Unit of Work**, **IoC/DI**, **Service Lifetimes**, **Data Access patterns** (Lazy/Eager Loading, Identity Map, Active Record, Data Mapper), and **Specification/Mediator/CQRS/Result/Options/Decorator pipeline**.
+- **Why** — They sit between GoF (class level) and architectural styles (system level). They shape how an application interacts with data and other applications.
+- **When** — Building application services, data-access code, dependency wiring; deciding between Active Record and Data Mapper; choosing a Repository style; structuring cross-cutting concerns.
+- **Where** — Live in the **Application / Infrastructure** layers of Clean/Hexagonal architecture. Many are already implemented in modern .NET (`DbContext` is Unit of Work, `DbSet<T>` is generic Repository, MediatR is Mediator, `IOptions<T>` is the Options pattern).
+
+---
+
 ## What Counts as an "Enterprise Pattern"?
 
 * **Scope:** the data-access layer, application service layer, and presentation/integration boundaries of a typical enterprise application.

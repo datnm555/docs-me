@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Chuỗi local transaction qua nhiều service, mỗi cái với compensating action semantic-undo step của nó khi cái gì downstream fail — orchestrated (coordinator trung tâm) hoặc choreographed (event-driven).
+- **Tại sao** — Distributed ACID transaction (2PC) fragile vận hành qua microservices. Saga trade atomicity strict cho atomicity *eventual* bằng cách make mọi step idempotent và compensable.
+- **Khi nào** — Workflow business span 2+ service, mỗi cái own data riêng, và không thể dùng single DB transaction. Ví dụ: place order → charge payment → reserve inventory → ship.
+- **Ở đâu** — Trong hệ thống microservices; pair với Outbox pattern (cho publish reliable), Inbox (cho receive idempotent), và Domain Event (trong aggregate nguồn). Thường sống cạnh service own workflow.
+
+---
+
 ## Bài toán
 
 Trong monolith, "place order → charge card → reserve inventory → ship" chạy trong **một DB transaction**. Nếu có gì fail, ta `ROLLBACK`.

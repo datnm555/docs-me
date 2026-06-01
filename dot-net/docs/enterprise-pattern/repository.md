@@ -6,6 +6,15 @@ It is **NOT** a GoF design pattern.
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A **collection-like abstraction** between the domain and the data-mapping layer; one repository per aggregate root, methods named in the Ubiquitous Language. Plus a deep-dive on why **Generic Repository** (`IRepository<T>`) on top of EF Core is widely considered an anti-pattern in DDD circles.
+- **Why** — Hides the data store so domain code reads as if working with an in-memory collection; lets you swap SQL → Mongo → in-memory without touching consumers; provides a place to centralize aggregate-loading rules.
+- **When** — DDD/Clean systems where you want the domain layer to be portable and testable. Skip for thin CRUD apps where `DbContext` + `DbSet<T>` is already enough.
+- **Where** — Interface in the **Domain** (or Application) layer; implementation in **Infrastructure**. One per aggregate root, never per table. Pair with Unit of Work (`DbContext`) and architecture tests that enforce the boundary.
+
+---
+
 ## What Repository Is
 
 A Repository:

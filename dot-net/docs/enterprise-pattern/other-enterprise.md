@@ -18,6 +18,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The application-layer patterns above the data tier: **Specification**, **CQRS**, **Mediator** (MediatR), **Result/Either**, **Options**, **Decorator Pipeline**, **Factory**, **Strategy at the Seam**.
+- **Why** — Each solves a specific application-level pain (composable rules, read/write separation, request dispatch, expected-failure handling, validated config, cross-cutting concerns). They're "above" data access but "below" architecture.
+- **When** — When a recurring pain — repeated business predicates, fat handlers, scattered logging/retry code, stringly-typed config — points to one of these patterns. Don't reach for any of them without the corresponding pain.
+- **Where** — **Application** layer of a Clean/Hexagonal app. Many of these are foundational to the canonical .NET stack (MediatR + pipeline behaviors + FluentValidation + Result<T> + IOptions<T>).
+
+---
+
 ## 1. Specification
 
 > Encapsulate a business rule as an object you can **combine**, **reuse**, and **test in isolation**.

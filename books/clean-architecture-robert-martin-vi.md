@@ -10,6 +10,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tóm tắt sách Uncle Bob 2017 — Dependency Rule, diagram 4-ring, 6 component principle (REP/CCP/CRP/ADP/SDP/SAP), Humble Object pattern, và claim rằng database, web, và framework đều là "detail".
+- **Tại sao** — Cho bạn argument *first-principles* cho thiết kế layered driven bởi inversion, để có thể defend (hoặc rebuild) quyết định architecture thay vì cargo-cult folder layout.
+- **Khi nào** — Hệ thống sống lâu nơi cost of change cao; modernize monolith legacy; quyết định mock gì và test gì; tranh luận với người nghĩ "database là foundation".
+- **Ở đâu** — Pair với `dot-net/docs/architectural-style/clean-architecture-vi.md` (implementation .NET), `principles/solid-vi.md` (nguyên lý chịu lực), và `books/domain-driven-design-eric-evans-vi.md` (companion modeling domain tự nhiên).
+
+---
+
 ## Mục lục
 
 1. [Về cuốn sách](#1-về-cuốn-sách)

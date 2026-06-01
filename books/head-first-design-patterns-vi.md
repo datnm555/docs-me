@@ -10,6 +10,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tóm tắt tour thân thiện của Freeman & Robson qua 14 pattern GoF mà Head First cover sâu (Strategy, Observer, Decorator, Factory, Singleton, Command, Adapter, Facade, Template Method, Iterator, Composite, State, Proxy, Compound/MVC) cộng 9 nguyên lý OO design sách tích luỹ chương-by-chương.
+- **Tại sao** — Cho bạn pattern *cộng* running story làm chúng đáng nhớ; bridge gap giữa định nghĩa pattern trừu tượng (GoF) và nhận diện pattern trong code thật (codebase của bạn).
+- **Khi nào** — Lần đầu học design pattern; trước phỏng vấn system-design; khi muốn ví dụ canonical để anchor argument code-review ("đây là Decorator, không phải Adapter — đây là lý do").
+- **Ở đâu** — Pair với `dot-net/docs/design-pattern/` (implementation .NET cả 23), `principles/` (9 nguyên lý OO sâu), và `oop/` (trụ cột sách giả định).
+
+---
+
 ## Mục lục
 
 1. [Về cuốn sách](#1-về-cuốn-sách)

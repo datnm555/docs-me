@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Separate the model used to **change** data (commands → rich domain model) from the model used to **read** data (queries → flat DTOs from projections). A spectrum from light (same DB, different handlers) to heavy (separate stores, event-sourced write side).
+- **Why** — Read and write workloads want incompatible shapes: writes want normalized + transactional + rich invariants; reads want denormalized + fast + shape-specific. One model trying to do both does both badly.
+- **When** — Reads and writes have genuinely different shapes; read traffic dwarfs write traffic; you want to evolve UI projections without touching the domain; you're already paying for MediatR + handlers.
+- **Where** — Inside a Bounded Context (Greg Young: *"CQRS is not a top-level architecture; it's a pattern applied to a Bounded Context"*). Pairs naturally with Event Sourcing, MediatR, and Read Models in Redis/Elastic.
+
+---
+
 ## The Core Idea
 
 A single domain model that supports both writes and reads ends up serving neither well:

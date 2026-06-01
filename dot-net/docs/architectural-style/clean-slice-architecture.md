@@ -12,6 +12,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A pragmatic hybrid: **Clean Architecture on the outside, Vertical Slice on the inside**. Clean enforces the Dependency Rule across project boundaries (Domain ← Application ← Infrastructure ← Web); Vertical Slice organizes the *Application* layer into one folder per use case.
+- **Why** — Get the dependency-rule discipline of Clean (framework-free Domain, replaceable Infrastructure) *plus* the feature cohesion of Vertical Slice (one folder per use case, no god services).
+- **When** — Modern .NET greenfield projects (2025+); evolving from N-Layer or Clean toward feature-first organization; team mature enough for MediatR + Pipeline Behaviors + FluentValidation.
+- **Where** — The current default recommendation for new .NET projects. Implements the Dependency Rule with project references; organizes Application by feature; pairs naturally with CQRS, DDD aggregates, and 3-tier deployment.
+
+---
+
 ## Table of Contents
 
 1. [What Is Clean Slice?](#1-what-is-clean-slice)

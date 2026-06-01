@@ -10,6 +10,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A digest of Newman's 2021 2nd edition — the working definition of "microservice" (independently deployable, modeled around a business domain, network-coupled), modeling via bounded contexts, splitting a monolith, sagas vs. orchestration, CI/CD, observability, security, resilience, scaling, and Conway's Law.
+- **Why** — Tells you when (and especially when **not**) to use microservices, what operational maturity is required, and which patterns are non-negotiable once you commit (Outbox, sagas, idempotency, distributed tracing).
+- **When** — Considering microservices; splitting an existing monolith; running a distributed system and feeling pain; auditing whether your "microservices" are actually a distributed monolith.
+- **Where** — Pair with `dot-net/docs/architectural-pattern/` (saga, outbox, cqrs, event-sourcing), `dot-net/docs/ddd/strategic-patterns.md` (bounded contexts), and `books/domain-driven-design-eric-evans.md` (the modeling foundation).
+
+---
+
 ## Table of Contents
 
 1. [About the Book](#1-about-the-book)

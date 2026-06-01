@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — 7 GoF structural pattern: **Adapter**, **Bridge**, **Composite**, **Decorator**, **Facade**, **Flyweight**, **Proxy** — liên quan đến cách class và object được compose thành cấu trúc lớn hơn.
+- **Tại sao** — Composition linh hoạt hơn inheritance. Structural pattern cho phép bridge interface không tương thích (Adapter), wrap behavior (Decorator), share object fine-grained (Flyweight), hoặc ẩn phức tạp (Facade) mà không sửa code được wrap.
+- **Khi nào** — Integrating với SDK third-party mà shape không fit (Adapter); thêm cross-cutting concern như caching/logging/retry quanh service (Decorator); present API thống nhất trên subsystem (Facade); render nhiều UI element tương tự (Flyweight); control access (Proxy).
+- **Ở đâu** — Mức class/object. Trong .NET: ASP.NET Core middleware *là* Decorator trên `HttpContext`; EF Core lazy-loading là Proxy; `DelegatingHandler` là Decorator flavored Chain-of-Responsibility; `Decorate<T>()` của Scrutor là form DI.
+
+---
+
 ## Mục lục
 
 1. [Adapter](#1-adapter)

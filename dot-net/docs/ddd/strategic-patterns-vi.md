@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Nửa cấp hệ thống của DDD: **Ubiquitous Language** (một vocabulary per context), **Bounded Context** (boundary explicit cho một model), **Context Map** (diagram cách context relate), **Anti-Corruption Layer** (dịch khi model không fit), cộng 9 quan hệ context-mapping (Partnership, Shared Kernel, Customer/Supplier, Conformist, ACL, Open Host Service, Published Language, Separate Ways, Big Ball of Mud).
+- **Tại sao** — Tactical pattern work bên trong *một* model. Moment bạn có hai team, nhiều service, hoặc legacy system, bạn có nhiều model sẽ conflict. Strategic design đặt tên boundary và quan hệ giữa chúng.
+- **Khi nào** — Hệ thống multi-team; công ty với terminology share nghĩa khác cho department khác; integration với legacy hoặc third-party; quyết định boundary microservices.
+- **Ở đâu** — Trên tactical pattern; inform cả *service nào* build (một per Bounded Context) và *cách* chúng integrate (Context Map). Pair với modeling microservices của Sam Newman.
+
+---
+
 ## Tại sao strategic đến trước
 
 Trong app nhỏ, bạn có thể làm tactical DDD (Aggregate, Value Object) mà không cần strategic. Nhưng khi hai team ship cùng nhau — hoặc một hệ thống vượt qua một model — strategic DDD thành phao cứu sinh:

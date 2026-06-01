@@ -18,6 +18,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — **IoC** is a principle (the framework calls your code, not the other way around). **DI** is a pattern that realizes IoC by passing dependencies into a class rather than constructing them inside.
+- **Why** — DI enables testability (substitute fakes), flexibility (swap implementations via config), single responsibility (the class doesn't build its world), and decorators (wrap behavior without modifying core).
+- **When** — Almost always in modern .NET/Spring/NestJS. Default to **constructor injection**; reach for setter/property only for optional deps; skip DI only for tiny scripts or short-lived prototypes.
+- **Where** — Wired at the **composition root** (`Program.cs`). Container manages lifetimes (see `lifetimes.md`). Foundation for nearly every pattern in this folder (Repository, Mediator, Decorator pipeline, Options).
+
+---
+
 ## 1. Inversion of Control (IoC)
 
 > *"Don't call us — we'll call you."* (The **Hollywood Principle**.)

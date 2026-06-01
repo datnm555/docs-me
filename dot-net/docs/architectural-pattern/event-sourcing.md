@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Persist the **events** that changed state as the source of truth; rebuild current state by replaying events. Snapshots optimize replay; projections expose read shapes.
+- **Why** — Perfect audit log built-in; time-travel queries; new read projections from historical data; debugging by replaying actual user sequences; naturally publishes domain events.
+- **When** — Domain is inherently event-driven (banking, trading, audit-heavy workflows, gaming); regulatory auditability is required; you need many different read shapes of the same facts.
+- **Where** — Inside a Bounded Context, on the **write side** of a CQRS split. Pair with EventStoreDB / Marten / a custom Postgres event store, plus projections in SQL or Redis for the read side.
+
+---
+
 ## Traditional Persistence vs. Event Sourcing
 
 ### Traditional (state-based)

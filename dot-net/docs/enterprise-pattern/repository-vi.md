@@ -8,6 +8,15 @@ Nó **KHÔNG PHẢI** GoF design pattern.
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — **Abstraction collection-like** giữa domain và data-mapping layer; một repository per aggregate root, method name trong Ubiquitous Language. Cộng deep-dive về tại sao **Generic Repository** (`IRepository<T>`) trên EF Core được coi rộng rãi là anti-pattern trong DDD.
+- **Tại sao** — Ẩn data store để domain code đọc như đang work với collection in-memory; cho phép swap SQL → Mongo → in-memory mà không đụng consumer; cung cấp chỗ tập trung rule loading aggregate.
+- **Khi nào** — Hệ thống DDD/Clean nơi muốn domain layer portable và testable. Skip cho app CRUD mỏng nơi `DbContext` + `DbSet<T>` đã đủ.
+- **Ở đâu** — Interface trong **Domain** (hoặc Application) layer; implementation trong **Infrastructure**. Một per aggregate root, không bao giờ per table. Pair với Unit of Work (`DbContext`) và architecture test enforce boundary.
+
+---
+
 ## Repository là gì
 
 Một Repository:

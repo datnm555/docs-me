@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The other principles every working engineer eventually internalizes: **Law of Demeter**, **Composition over Inheritance**, **Tell, Don't Ask**, **POLA** (Least Astonishment), **Fail Fast**, **Convention over Configuration**, **Boy Scout Rule**, **Encapsulation**, **Least Privilege**, **Single Source of Truth**, **Curly's Law**, **Hollywood Principle**, **Worse Is Better**.
+- **Why** — None of these are part of SOLID or GRASP, but together they cover the *behavioral*, *organizational*, and *defensive* aspects of good code that the famous-acronym principles miss.
+- **When** — Writing or reviewing any non-trivial code. These principles catch the smells that SOLID alone doesn't name (train wrecks, anemic models, time-coupled tests, hidden globals).
+- **Where** — Code review checklists; mentoring conversations; daily coding decisions. Most of these reinforce or refine the SOLID and GRASP rules from a different angle.
+
+---
+
 ## Table of Contents
 
 1. [Law of Demeter (LoD)](#1-law-of-demeter-lod)

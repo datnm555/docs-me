@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Persist **event** đã change state như source of truth; rebuild state hiện tại bằng replay event. Snapshot tối ưu replay; projection expose shape read.
+- **Tại sao** — Audit log hoàn hảo built-in; query time-travel; projection read mới từ data lịch sử; debug bằng replay sequence user thật; tự nhiên publish domain event.
+- **Khi nào** — Domain inherently event-driven (banking, trading, audit-heavy workflow, gaming); auditability regulatory required; cần nhiều shape read khác của cùng fact.
+- **Ở đâu** — Bên trong Bounded Context, ở **write side** của CQRS split. Pair với EventStoreDB / Marten / custom Postgres event store, cộng projection trong SQL hoặc Redis cho read side.
+
+---
+
 ## Persistence truyền thống vs. Event Sourcing
 
 ### Truyền thống (state-based)

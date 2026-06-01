@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — 5 GoF creational pattern: **Singleton**, **Factory Method**, **Abstract Factory**, **Builder**, **Prototype** — liên quan đến cách object được construct.
+- **Tại sao** — `new SomeClass()` ngây thơ couple client với type cụ thể. Creational pattern abstract instantiation để type đúng có thể chọn runtime, construction phức tạp có thể ẩn, và single instance có thể enforce.
+- **Khi nào** — Construction involve runtime decision (subtype nào?), nhiều parameter tuỳ chọn, setup đắt, hoặc gia đình type liên quan phải stay consistent.
+- **Ở đâu** — Mức class. Trong .NET hiện đại, DI container đã implement Singleton + Factory; BCL cung cấp type `*Builder` (`StringBuilder`, `WebApplicationBuilder`, EF model builder); `record` + `with` cho Prototype miễn phí.
+
+---
+
 ## Mục lục
 
 1. [Singleton](#1-singleton)

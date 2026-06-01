@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Các architectural **style**: N-Layer, N-Tier, Clean, Hexagonal, Onion, Vertical Slice, Clean Slice, Event-Driven, cộng các doc so sánh và mix.
+- **Tại sao** — Style set rule mà pattern hoạt động bên trong. Chọn style sai hoặc mix style không tương thích cost hơn bất kỳ pattern decision nào.
+- **Khi nào** — Khởi đầu hệ thống mới; audit liệu "Clean Architecture" của bạn thực sự trỏ dependency vào trong; quyết định mix Vertical Slice với vòng ngoài Clean; tranh luận microservices vs. monolith.
+- **Ở đâu** — Ngồi *trên* architectural pattern (Saga, CQRS trong `../architectural-pattern/`) và *dưới* methodology (DDD trong `../ddd/`). Phần lớn app pick một style trên trục principles + một trên trục logic + một số tier.
+
+---
+
 ## Style vs. Pattern vs. Design Pattern
 
 | Khái niệm                  | Phạm vi                | Ví dụ                                                          |

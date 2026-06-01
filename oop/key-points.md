@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A high-density cheat sheet of OO design wisdom: the four pillars in one line each, class-design essentials, inheritance vs. composition, abstract class vs. interface, value vs. entity vs. aggregate, SOLID in 30 seconds, OO smells, top interview questions, and what juniors vs. seniors get right/wrong.
+- **Why** — Every line is a *claim you should be able to defend with an example and counter with a trade-off*. Most "checklists" are useless; this one is meant for pre-interview review and code-review arguments.
+- **When** — The day before an interview; preparing to lead a design review; mentoring a developer who's about to violate one of these rules.
+- **Where** — Distillation of `pillars.md`, `concepts.md`, `real-project.md`, and `principles/`. The recall aid after you've internalized the longer docs.
+
+---
+
 ## Table of Contents
 
 1. [The Four Pillars in One Line Each](#1-the-four-pillars-in-one-line-each)

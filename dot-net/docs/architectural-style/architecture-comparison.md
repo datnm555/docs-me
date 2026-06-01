@@ -9,6 +9,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A three-way comparison and decision guide for **N-Layer**, **N-Tier**, and **Clean** Architecture — what each is, what axis it sits on, advantages, disadvantages, when to pick which.
+- **Why** — These three are commonly conflated (especially N-Layer ↔ N-Tier). The comparison shows they're not alternatives — they answer different questions and most apps use *all three* together.
+- **When** — Starting a new system; explaining the difference to a team; choosing the right defaults for a CRUD app vs. a complex domain.
+- **Where** — Read **before** the per-style deep-dives in this folder. For the five-way version including Hexagonal and Vertical Slice, see `five-architectures-comparison-and-mixing.md`.
+
+---
+
 ## Table of Contents
 
 1. [TL;DR — They Live on Different Axes](#1-tldr--they-live-on-different-axes)

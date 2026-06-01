@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A practical, end-to-end reference for Object-Oriented Programming: the four pillars (Encapsulation, Abstraction, Inheritance, Polymorphism), language-level constructs, a real e-commerce checkout walkthrough, and an interview cheat sheet.
+- **Why** — OOP is the default paradigm for enterprise software because it manages dependencies and absorbs change well. These notes turn the abstract pillars into vocabulary you can apply in code reviews.
+- **When** — Before learning design patterns or DDD; whenever a team argues about inheritance vs. composition; refreshing fundamentals before an interview.
+- **Where** — Language-agnostic (examples in C# but ideas apply to Java/TypeScript/Kotlin/Python). Foundation for `principles/` (SOLID, GRASP) and `dot-net/docs/design-pattern/` (the GoF 23).
+
+---
+
 ## Table of Contents
 
 1. [What Is OOP?](#1-what-is-oop)

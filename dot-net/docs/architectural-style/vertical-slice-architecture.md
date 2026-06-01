@@ -11,6 +11,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Organize code by **feature**, not by technical layer. Each feature (use case) owns everything it needs — command, validator, handler, response, endpoint — in one folder. *"Minimize coupling between slices; maximize coupling within a slice."* — Jimmy Bogard.
+- **Why** — Adding/removing a feature touches one folder, not seven. No more "god service" or "god controller" accumulating responsibilities. Each slice can use the right tool (Dapper for read, EF for write) without enforcing a global choice.
+- **When** — Apps with many independent features (admin tools, CRUD-heavy systems with diverse flows); teams organized by feature; greenfield projects where you want to defer abstractions.
+- **Where** — System-wide style on the *logical* axis (alternative to N-Layer). Typically inside a Clean Architecture shell ("Clean Slice"). Pairs with MediatR + Pipeline Behaviors + FluentValidation as the canonical .NET combo.
+
+---
+
 ## Table of Contents
 
 1. [What Is Vertical Slice Architecture?](#1-what-is-vertical-slice-architecture)

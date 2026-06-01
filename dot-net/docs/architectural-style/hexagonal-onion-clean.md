@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A side-by-side comparison of three closely related styles — **Hexagonal** (Cockburn, 2005), **Onion** (Palermo, 2008), **Clean** (Uncle Bob, 2012/2017) — that all enforce the same rule: **dependencies point inward**.
+- **Why** — These three names refer to substantially the same idea with different vocabulary. Knowing they're synonyms ends most of the "which is right?" arguments and lets you pick one and stay consistent.
+- **When** — Deciding which terminology to standardize on; reading a codebase that uses one and a paper that uses another; defending your architecture to a reviewer who learned the other name.
+- **Where** — Each of the three has its own deep-dive file in this folder (`clean-architecture.md`, `hexagonal-architecture.md`, plus Onion as a section here). This file is the **comparison** map — read it first if all three sound the same.
+
+---
+
 ## The Common Core
 
 All three reject the N-Layer assumption that "the database is at the bottom." Instead:

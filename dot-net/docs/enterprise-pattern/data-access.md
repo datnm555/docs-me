@@ -18,6 +18,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The data-access patterns from PoEAA: **Repository**, **Unit of Work**, **Lazy / Eager / Explicit Loading**, **Identity Map**, **Active Record vs. Data Mapper**, **Query Object** and **Specification**.
+- **Why** — They give you a precise vocabulary for talking about how domain code reaches the database. Most production bugs in data code come from mixing strategies (lazy-load when you needed eager, generic repo when you needed specific, Active Record when you needed Data Mapper).
+- **When** — Whenever you're choosing how to load related data, structure a query, or wrap an ORM. The choice is often made implicitly — making it explicit is the first step toward fixing N+1 queries and Cartesian explosions.
+- **Where** — **Infrastructure** layer (the implementations) and the **Application/Domain** boundary (the interfaces). EF Core already implements many of these (Identity Map, Lazy Load via proxies, Unit of Work via `DbContext`).
+
+---
+
 ## 1. Repository
 
 > *"A repository mediates between the domain and the data-mapping layers, **acting like an in-memory collection** of domain objects."* — Eric Evans, *DDD*

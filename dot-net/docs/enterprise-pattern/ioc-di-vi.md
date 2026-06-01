@@ -20,6 +20,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — **IoC** là nguyên lý (framework call code của bạn, không ngược lại). **DI** là pattern realize IoC bằng cách pass dependency vào class thay vì construct bên trong.
+- **Tại sao** — DI enable testability (substitute fake), flexibility (swap implementation qua config), single responsibility (class không build thế giới của nó), và decorator (wrap behavior không sửa core).
+- **Khi nào** — Gần như luôn luôn trong .NET/Spring/NestJS hiện đại. Default **constructor injection**; reach setter/property chỉ cho dep optional; skip DI chỉ cho script tí xíu hoặc prototype sống ngắn.
+- **Ở đâu** — Wire ở **composition root** (`Program.cs`). Container quản lý lifetime (xem `lifetimes-vi.md`). Foundation cho gần như mọi pattern trong folder này (Repository, Mediator, Decorator pipeline, Options).
+
+---
+
 ## 1. Inversion of Control (IoC)
 
 > *"Đừng call chúng tôi — chúng tôi sẽ call bạn."* (**Hollywood Principle**.)

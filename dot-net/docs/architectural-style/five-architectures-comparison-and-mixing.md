@@ -14,6 +14,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A side-by-side comparison of the five architectural styles in this folder (**N-Layer, N-Tier, Clean, Vertical Slice, Hexagonal**) plus a practical guide to **mixing** them — which combinations work, which don't, and how to pick.
+- **Why** — Real apps combine multiple styles (e.g., Clean + Vertical Slice + 3-tier). This doc shows you which combinations are canonical, which are anti-mixes, and how to migrate between them.
+- **When** — Picking a stack for a new app; auditing an existing system to name what you actually have; planning a migration from N-Layer to Clean Slice.
+- **Where** — The most comprehensive comparison file in `architectural-style/`. Pair with the per-style deep-dives for details and `architecture-comparison.md` for the simpler three-way comparison.
+
+---
+
 ## Table of Contents
 
 ### Part A — Comparison

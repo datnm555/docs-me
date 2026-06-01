@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A full end-to-end design exercise: an e-commerce checkout module modeled with all four OO pillars, layered into Domain / Application / Infrastructure / API, with explicit cross-references to which principle each piece serves.
+- **Why** — Patterns and principles only click when you see them composed in a real codebase. This walkthrough connects "Strategy" / "SRP" / "DIP" to the lines of code where they live.
+- **When** — After reading `pillars.md` and `concepts.md`, before tackling the deep `dot-net/docs/` content. Or as a reference example when designing a similar module.
+- **Where** — Hypothetical solution layout — but the structure (Domain ← Application ← Infrastructure ← Web) is the canonical Clean/Hexagonal shape you'll see in real .NET projects.
+
+---
+
 ## Table of Contents
 
 1. [The Requirements](#1-the-requirements)

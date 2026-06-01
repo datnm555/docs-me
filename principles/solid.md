@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The five SOLID principles: **S**ingle Responsibility, **O**pen/Closed, **L**iskov Substitution, **I**nterface Segregation, **D**ependency Inversion — popularized by Robert C. Martin around 2000.
+- **Why** — These five together turn ad-hoc OO code into code that's *easy to change, easy to test, and easy to understand*. Most "bad code" smells (god class, shotgun surgery, fragile base class, untestable singletons) violate one of these.
+- **When** — Every class-design decision; explaining why a refactor is needed; rejecting a PR that adds yet another `if (type == ...)` switch.
+- **Where** — Class level (compare to GRASP at responsibility-assignment level, and component principles at module level). Dependency Inversion in particular is the load-bearing principle behind Clean Architecture, Hexagonal, and DI.
+
+---
+
 ## Table of Contents
 
 1. [S — Single Responsibility Principle (SRP)](#1-s--single-responsibility-principle-srp)

@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — An **architectural style** where components communicate primarily by producing and consuming events (domain events, integration events, event-carried state transfer) over a broker, not by direct request/response.
+- **Why** — Decouples producers from consumers in time and identity: add new subscribers without touching producers, isolate failures, scale subscribers independently, survive temporary outages of one side.
+- **When** — Many subsystems need to react to one business fact; workflows are long-running or cross services; you want to add new behavior without touching existing services; you're already on microservices.
+- **Where** — System-wide style choice (sits next to N-Layer / Clean / Microservices on the same axis). Implementations use brokers (RabbitMQ, Kafka, Azure Service Bus) plus patterns (Outbox, Saga, CQRS, Event Sourcing) from `../architectural-pattern/`.
+
+---
+
 ## Is EDA a Design Pattern?
 
 **No.** Event-Driven Architecture is an **architectural style** — it's at the same level as Layered, Hexagonal, REST, or Microservices. It is **not** a GoF design pattern.

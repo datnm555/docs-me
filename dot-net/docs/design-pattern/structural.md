@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The 7 GoF structural patterns: **Adapter**, **Bridge**, **Composite**, **Decorator**, **Facade**, **Flyweight**, **Proxy** — concerned with how classes and objects are composed into larger structures.
+- **Why** — Composition is more flexible than inheritance. Structural patterns let you bridge incompatible interfaces (Adapter), wrap behavior (Decorator), share fine-grained objects (Flyweight), or hide complexity (Facade) without modifying the wrapped code.
+- **When** — Integrating with a third-party SDK whose shape doesn't fit (Adapter); adding cross-cutting concerns like caching/logging/retry around a service (Decorator); presenting a unified API over a subsystem (Facade); rendering many similar UI elements (Flyweight); controlling access (Proxy).
+- **Where** — Class/object level. In .NET: ASP.NET Core middleware *is* Decorator on `HttpContext`; EF Core lazy-loading is Proxy; `DelegatingHandler` is Chain-of-Responsibility-flavored Decorator; Scrutor's `Decorate<T>()` is the DI form.
+
+---
+
 ## Table of Contents
 
 1. [Adapter](#1-adapter)

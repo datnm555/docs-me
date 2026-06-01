@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tách model dùng để **change** data (command → rich domain model) khỏi model dùng để **read** data (query → flat DTO từ projection). Spectrum từ light (cùng DB, handler khác) tới heavy (store riêng, write side event-sourced).
+- **Tại sao** — Workload read và write muốn shape không tương thích: write muốn normalized + transactional + invariant phong phú; read muốn denormalized + nhanh + shape-specific. Một model try làm cả hai làm cả hai tệ.
+- **Khi nào** — Read và write có shape thực sự khác; traffic read lấn write; muốn evolve projection UI mà không đụng domain; đã trả cho MediatR + handler.
+- **Ở đâu** — Bên trong Bounded Context (Greg Young: *"CQRS không phải kiến trúc cấp top; là pattern áp dụng cho Bounded Context"*). Pair tự nhiên với Event Sourcing, MediatR, và Read Model trong Redis/Elastic.
+
+---
+
 ## Ý tưởng cốt lõi
 
 Một domain model duy nhất phục vụ cả write và read sẽ phục vụ không tốt bên nào:

@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A language-agnostic reference for software-engineering principles: **DRY**, **KISS**, **YAGNI**, **SoC** (core); **SOLID** (5 OO principles); **GRASP** (9 responsibility-assignment principles); plus LoD, POLA, Fail Fast, Composition over Inheritance, Tell-Don't-Ask, and more.
+- **Why** — Principles are *guidelines for good design* — the **why** behind every pattern and architecture. Internalize them and you'll reinvent half the patterns on demand; ignore them and even the best patterns won't save the system.
+- **When** — Every design decision; code reviews ("which principle does this violate?"); explaining trade-offs to junior teammates; deciding whether to apply a pattern at all.
+- **Where** — Above patterns and architectures in the hierarchy. Foundation for `oop/`, `dot-net/docs/design-pattern/`, `dot-net/docs/architectural-style/`, and `dot-net/docs/ddd/`.
+
+---
+
 ## Table of Contents
 
 1. [What Is a Principle?](#1-what-is-a-principle)

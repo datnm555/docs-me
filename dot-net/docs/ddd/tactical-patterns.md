@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The code-level building blocks of DDD: **Entity** (identity over time), **Value Object** (immutable, equal by value), **Aggregate** (consistency boundary with one root), **Domain Service** (behavior that doesn't fit one entity), **Domain Event** (something that happened), **Factory** (complex construction), **Repository** (collection-like access per aggregate root), **Module** (group by domain concept).
+- **Why** — These patterns enforce domain invariants at the type system level, eliminate primitive obsession, and keep business logic out of services / controllers.
+- **When** — Inside a Bounded Context where the domain has meaningful behavior (not just CRUD). Skip for trivial admin tools — the ceremony costs more than the benefit there.
+- **Where** — Live in the **Domain layer** of Clean/Hexagonal/Onion architecture. Pair with strategic patterns (Bounded Contexts) and domain events flowing out via the Outbox pattern to other contexts.
+
+---
+
 ## Index
 
 1. [Entity](#1-entity)

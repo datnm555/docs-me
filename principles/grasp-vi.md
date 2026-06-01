@@ -7,6 +7,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — 9 nguyên lý GRASP (Craig Larman): **Information Expert**, **Creator**, **Controller**, **Low Coupling**, **High Cohesion**, **Polymorphism**, **Pure Fabrication**, **Indirection**, **Protected Variations**.
+- **Tại sao** — Khi SOLID hỏi *"class này có được thiết kế tốt?"*, GRASP hỏi câu cơ bản hơn: ***"trách nhiệm này nên thuộc class nào?"***. Cùng nhau chúng cover cả design và allocation của trách nhiệm.
+- **Khi nào** — Quyết định đặt method mới ở đâu; review smell "Feature Envy"; giải thích tại sao Repository (Pure Fabrication) không represent concept domain thật; thiết kế Mediator (Indirection).
+- **Ở đâu** — Allocation trách nhiệm mức class. Foundation cho hiểu *tại sao* pattern GoF được shape theo cách chúng được.
+
+---
+
 ## Mục lục
 
 1. [Information Expert](#1-information-expert)

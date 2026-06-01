@@ -6,6 +6,15 @@ In short: a Unit of Work **tracks what changed** during a business operation and
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A pattern that **tracks changes** to multiple objects during a business operation and **commits them atomically** as one transaction at the end.
+- **Why** — Without it, application code does N writes one at a time and any failure leaves the system inconsistent. With it, every business operation is all-or-nothing.
+- **When** — Any time a business operation modifies more than one entity / aggregate inside one transaction. EF Core's `DbContext` already implements this — you usually don't need to write your own `IUnitOfWork`.
+- **Where** — Sits in the **Application** layer (the use-case calls `SaveChangesAsync` once at the end). Pairs with one repository per aggregate root. For cross-service transactions, use Sagas instead (`../architectural-pattern/saga.md`).
+
+---
+
 ## The Problem It Solves
 
 Without a Unit of Work, the application code is responsible for tracking every change and saving each one explicitly:

@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Building block cấp code của DDD: **Entity** (identity qua thời gian), **Value Object** (immutable, bằng theo value), **Aggregate** (boundary consistency với một root), **Domain Service** (behavior không fit một entity), **Domain Event** (cái gì đã xảy ra), **Factory** (construction phức tạp), **Repository** (truy cập collection-like per aggregate root), **Module** (group theo concept domain).
+- **Tại sao** — Các pattern này enforce domain invariant ở mức type system, loại bỏ primitive obsession, và giữ business logic ngoài service / controller.
+- **Khi nào** — Bên trong Bounded Context nơi domain có behavior có ý nghĩa (không chỉ CRUD). Skip cho admin tool trivial — ceremony cost hơn benefit ở đó.
+- **Ở đâu** — Sống trong **Domain layer** của kiến trúc Clean/Hexagonal/Onion. Pair với strategic pattern (Bounded Context) và domain event flow ra qua Outbox pattern tới context khác.
+
+---
+
 ## Index
 
 1. [Entity](#1-entity)

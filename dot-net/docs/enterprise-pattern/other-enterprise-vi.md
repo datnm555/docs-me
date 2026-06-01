@@ -20,6 +20,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Các pattern application-layer trên tier data: **Specification**, **CQRS**, **Mediator** (MediatR), **Result/Either**, **Options**, **Decorator Pipeline**, **Factory**, **Strategy at the Seam**.
+- **Tại sao** — Mỗi cái giải một pain cụ thể cấp application (rule composable, tách read/write, request dispatch, xử lý fail dự đoán, config validated, cross-cutting concern). Chúng "trên" data access nhưng "dưới" architecture.
+- **Khi nào** — Khi pain lặp lại — predicate business lặp, handler béo, code logging/retry rải rác, config stringly-typed — point tới một trong các pattern này. Đừng reach bất kỳ cái nào không có pain tương ứng.
+- **Ở đâu** — **Application** layer của app Clean/Hexagonal. Nhiều cái là foundational cho .NET stack canonical (MediatR + pipeline behavior + FluentValidation + Result<T> + IOptions<T>).
+
+---
+
 ## 1. Specification
 
 > Đóng gói business rule thành object có thể **combine**, **reuse**, và **test isolate**.

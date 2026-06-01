@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — 23 design pattern Gang of Four kinh điển (5 creational, 7 structural, 11 behavioral) với sample C# idiomatic cho .NET hiện đại, cộng ranking về mỗi cái thực sự được dùng bao thường trong production.
+- **Tại sao** — Pattern là *giải pháp được đặt tên, đã được chứng minh* cho vấn đề lặp lại cấp class. Cho team vocabulary share ("đây là Strategy, không phải Factory — đây là lý do") và starting point cho design.
+- **Khi nào** — Khi có vấn đề thiết kế cấp class thật, lặp lại và variation thứ hai đã xuất hiện (rule of three). Skip pattern khi vấn đề là one-off — premature abstraction là cost lớn hơn.
+- **Ở đâu** — Mức class/object (giữa idiom ngôn ngữ và architectural pattern). Nhiều GoF pattern *đã được implement* bởi .NET hiện đại (DI = Singleton/Factory, middleware = Decorator/Chain of Responsibility, MediatR = Mediator/Command, EF = Repository/UoW/Lazy Load/Proxy).
+
+---
+
 ## Mục lục
 
 1. [Design Pattern là gì?](#1-design-pattern-là-gì)

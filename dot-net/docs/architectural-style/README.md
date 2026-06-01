@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Architectural **styles**: N-Layer, N-Tier, Clean, Hexagonal, Onion, Vertical Slice, Clean Slice, Event-Driven, plus the comparison and mixing docs.
+- **Why** — Style sets the rules that patterns operate inside. Choosing the wrong style or mixing incompatible styles costs more than any pattern decision.
+- **When** — Starting a new system; auditing whether your "Clean Architecture" actually points dependencies inward; deciding to mix Vertical Slice with Clean's outer rings; debating microservices vs. monolith.
+- **Where** — Sits *above* architectural patterns (Saga, CQRS in `../architectural-pattern/`) and *below* methodology (DDD in `../ddd/`). Most apps pick one style on the principles axis + one on the logical axis + one tier count.
+
+---
+
 ## Style vs. Pattern vs. Design Pattern
 
 | Concept                    | Scope                  | Example                                                       |

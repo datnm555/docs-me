@@ -22,6 +22,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Ba lifetime DI container có thể cho service: **Transient** (mới per resolution), **Scoped** (mới per HTTP request / unit of work), **Singleton** (một cho lifetime app). Cộng bẫy **Captive Dependency** và rule disposal.
+- **Tại sao** — Lifetime sai là bug DI phổ biến nhất. Giữ `DbContext` per-request trong singleton corrupt state xuyên request; làm service stateful thành singleton crash dưới concurrency.
+- **Khi nào** — Mỗi lần bạn register service. Default **Scoped** cho application logic, **Singleton** cho helper stateless/thread-safe, **Transient** cho helper nhẹ stateless.
+- **Ở đâu** — Composition root (`Program.cs`). Pair với `ioc-di-vi.md` (câu chuyện DI rộng hơn) và `data-access-vi.md` (tại sao `DbContext` là Scoped).
+
+---
+
 ## 1. Service Lifetime là gì?
 
 **Service lifetime** bảo DI container instance sống **bao lâu** và được tạo **bao thường xuyên**. Trả lời hai câu:

@@ -10,6 +10,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tóm tắt Blue Book của Eric Evans 2003 — Ubiquitous Language, Model-Driven Design, tactical pattern (Entity, Value Object, Aggregate, Domain Service, Repository, Factory, Domain Event), và strategic pattern (Bounded Context, Context Map, Anti-Corruption Layer, subdomain Core/Supporting/Generic).
+- **Tại sao** — Cho bạn vocabulary và discipline để model domain phức tạp sao cho code match cách domain expert nói — loại bỏ friction translation produce 90% bug "nhưng code của tôi làm sai thứ".
+- **Khi nào** — Domain phức tạp và trung tâm với business (banking, insurance, logistics, healthcare); hai team dùng cùng từ cho thứ khác; integrating với mớ legacy.
+- **Ở đâu** — Pair với `dot-net/docs/ddd/` (treatment .NET của tactical + strategic pattern), `books/clean-architecture-robert-martin-vi.md` (shell architectural mà domain layer DDD sống bên trong), và `books/building-microservices-sam-newman-vi.md` (một bounded context per service).
+
+---
+
 ## Mục lục
 
 1. [Về cuốn sách](#1-về-cuốn-sách)

@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — So sánh side-by-side ba style closely related — **Hexagonal** (Cockburn, 2005), **Onion** (Palermo, 2008), **Clean** (Uncle Bob, 2012/2017) — đều enforce cùng rule: **dependency trỏ vào trong**.
+- **Tại sao** — Ba tên này refer cùng idea substantially với vocabulary khác. Biết chúng đồng nghĩa end phần lớn argument "cái nào đúng?" và cho phép pick một và stay consistent.
+- **Khi nào** — Quyết định terminology nào standardize; đọc codebase dùng một và paper dùng khác; defend architecture với reviewer học tên khác.
+- **Ở đâu** — Mỗi ba cái có file deep-dive riêng trong folder này (`clean-architecture-vi.md`, `hexagonal-architecture-vi.md`, cộng Onion như section ở đây). File này là map **so sánh** — đọc trước nếu cả ba sound giống.
+
+---
+
 ## Cốt lõi chung
 
 Cả ba từ chối giả định của N-Layer rằng "database ở dưới đáy". Thay vào đó:

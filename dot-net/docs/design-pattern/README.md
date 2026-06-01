@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The 23 classic Gang of Four design patterns (5 creational, 7 structural, 11 behavioral) with idiomatic C# samples for modern .NET, plus a ranking of how often each is actually used in production.
+- **Why** — Patterns are *named, proven solutions* to recurring class-level problems. They give a team shared vocabulary ("this is Strategy, not Factory — here's why") and a starting point for designs.
+- **When** — When you have a real, recurring class-level design problem and the second variation has appeared (rule of three). Skip patterns when the problem is one-off — premature abstraction is the bigger cost.
+- **Where** — Class/object level (between language idioms and architectural patterns). Many GoF patterns are *already implemented* by modern .NET (DI = Singleton/Factory, middleware = Decorator/Chain of Responsibility, MediatR = Mediator/Command, EF = Repository/UoW/Lazy Load/Proxy).
+
+---
+
 ## Table of Contents
 
 1. [What Is a Design Pattern?](#1-what-is-a-design-pattern)

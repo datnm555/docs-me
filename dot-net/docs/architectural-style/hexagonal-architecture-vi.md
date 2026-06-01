@@ -12,6 +12,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Style "Ports & Adapters" của Alistair Cockburn (~2005). Core application bao quanh bởi **port** (interface owned by core) mà external technology plug in qua **adapter**. Driving adapter ở input side, driven adapter ở output side — đối xứng.
+- **Tại sao** — Core không phụ thuộc gì external; mọi technology (HTTP, DB, queue, email) replaceable. Killer feature: test Core với in-memory fake adapter — không DB, không web host, feedback sub-second.
+- **Khi nào** — Nhiều driving channel (HTTP API + CLI + scheduled job + test); hệ thống integration-heavy (nhiều partner/API external); team DDD-oriented; hệ thống sống lâu.
+- **Ở đâu** — Style toàn hệ thống trên trục *principles*. Tiền thân khái niệm của Onion và Clean (cùng essence, vocabulary khác). Pair với Vertical Slice bên trong Core và N-Tier deployment bên ngoài.
+
+---
+
 ## Mục lục
 
 1. [Hexagonal Architecture là gì?](#1-hexagonal-architecture-là-gì)

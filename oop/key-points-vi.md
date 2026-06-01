@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Cheat sheet high-density của OO design wisdom: bốn trụ cột một dòng mỗi, essential class-design, inheritance vs. composition, abstract class vs. interface, value vs. entity vs. aggregate, SOLID 30-giây, OO smell, top interview question, và cái junior vs. senior đúng/sai.
+- **Tại sao** — Mỗi dòng là *claim bạn nên defend được bằng ví dụ và counter được bằng trade-off*. Phần lớn "checklist" vô dụng; cái này được nghĩ cho review trước interview và argument code-review.
+- **Khi nào** — Ngày trước interview; chuẩn bị lead design review; mentor developer sắp vi phạm một trong các rule này.
+- **Ở đâu** — Distillation của `pillars-vi.md`, `concepts-vi.md`, `real-project-vi.md`, và `principles/`. Recall aid sau khi đã internalize doc dài hơn.
+
+---
+
 ## Mục lục
 
 1. [Bốn trụ cột — mỗi cái một dòng](#1-bốn-trụ-cột--mỗi-cái-một-dòng)

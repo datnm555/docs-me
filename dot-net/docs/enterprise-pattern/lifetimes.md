@@ -23,6 +23,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The three lifetimes the DI container can give a service: **Transient** (new per resolution), **Scoped** (new per HTTP request / unit of work), **Singleton** (one for the app's lifetime). Plus the **Captive Dependency** trap and disposal rules.
+- **Why** — Wrong lifetime is the single most common DI bug. Holding a per-request `DbContext` in a singleton corrupts state across requests; making a stateful service singleton crashes under concurrency.
+- **When** — Every time you register a service. Default to **Scoped** for application logic, **Singleton** for stateless/thread-safe helpers, **Transient** for lightweight stateless helpers.
+- **Where** — Composition root (`Program.cs`). Pair with `ioc-di.md` (the broader DI story) and `data-access.md` (why `DbContext` is Scoped).
+
+---
+
 ## 1. What Is a Service Lifetime?
 
 A **service lifetime** tells the DI container **how long** an instance lives and **how often** it is created. It's the single answer to two questions:

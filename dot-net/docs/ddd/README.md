@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Domain-Driven Design as a **methodology** — a way of designing software around a complex business domain, with two halves: **strategic** (Bounded Context, Context Map, Ubiquitous Language) and **tactical** (Aggregate, Entity, Value Object, Repository, Factory, Domain Event).
+- **Why** — Complexity in software comes from the domain itself. DDD gives you the vocabulary, patterns, and discipline to model that complexity so code matches how the business actually thinks — eliminating most translation-friction bugs.
+- **When** — The domain is complex and central to the business (banking, insurance, logistics, healthcare); teams or services need a shared model; integrating with a legacy system whose model doesn't fit yours.
+- **Where** — DDD is at the same level as TDD/BDD/Agile. Apply inside one or more Bounded Contexts; pair with Clean Architecture (the rings) and a microservices or modular-monolith deployment.
+
+---
+
 ## Is DDD a Design Pattern?
 
 **No.**

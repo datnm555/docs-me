@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The four pillars: **Encapsulation** (hide state behind behavior), **Abstraction** (expose what, hide how), **Inheritance** (specialize an existing type), **Polymorphism** (one interface, many runtime behaviors).
+- **Why** — These four ideas together explain *every* OO design decision. Master them and patterns like Strategy, Template Method, and Decorator become natural rather than memorized.
+- **When** — Before learning design patterns, SOLID, or DDD; explaining why an `if (x is Y)` is a code smell; deciding between subclassing and composition.
+- **Where** — Language fundamentals (the language's `class`, `interface`, `virtual` keywords are how each pillar shows up). Foundation for everything in `principles/`, `design-pattern/`, and `ddd/`.
+
+---
+
 ## Table of Contents
 
 1. [Encapsulation](#1-encapsulation)

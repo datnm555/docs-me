@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Construct cấp ngôn ngữ implement bốn trụ cột: class & object, field/property/method, constructor, `this`/`base`/`static`, abstract class vs. interface, `virtual`/`override`/`sealed`, value vs. reference type, record, generic, equality.
+- **Tại sao** — Trụ cột trừu tượng; construct là cách bạn thực sự viết chúng. Biết keyword nào express intent nào là khác biệt giữa code survive refactor và code không.
+- **Khi nào** — Quyết định coding hằng ngày: cái này nên là record hay class? Khi nào `override` vs. `new`? Có nên `sealed` cái này? Tại sao struct này copy?
+- **Ở đâu** — Mọi file source C# (và Java/Kotlin/TypeScript). Pair với `pillars-vi.md` (cái *tại sao*) và `principles/` (rule judge bạn dùng chúng đúng không).
+
+---
+
 ## Mục lục
 
 1. [Class & Object](#1-class--object)

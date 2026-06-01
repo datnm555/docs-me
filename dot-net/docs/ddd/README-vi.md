@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Domain-Driven Design như **methodology** — một cách thiết kế software xoay quanh domain business phức tạp, với hai nửa: **strategic** (Bounded Context, Context Map, Ubiquitous Language) và **tactical** (Aggregate, Entity, Value Object, Repository, Factory, Domain Event).
+- **Tại sao** — Phức tạp trong software đến từ bản thân domain. DDD cho bạn vocabulary, pattern, và discipline để model phức tạp đó để code match cách business thực sự nghĩ — loại bỏ phần lớn bug do friction translation.
+- **Khi nào** — Domain phức tạp và trung tâm với business (banking, insurance, logistics, healthcare); team hoặc service cần model share; integrating với legacy system mà model không fit với của bạn.
+- **Ở đâu** — DDD ở cùng cấp với TDD/BDD/Agile. Áp dụng bên trong một hoặc nhiều Bounded Context; pair với Clean Architecture (các ring) và deploy microservices hoặc modular-monolith.
+
+---
+
 ## DDD có phải Design Pattern không?
 
 **Không.**

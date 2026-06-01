@@ -13,6 +13,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tổ chức code theo **feature**, không theo layer technical. Mỗi feature (use case) own mọi thứ nó cần — command, validator, handler, response, endpoint — trong một folder. *"Tối thiểu coupling giữa slice; tối đa coupling trong slice."* — Jimmy Bogard.
+- **Tại sao** — Thêm/remove feature touch một folder, không bảy. Không "god service" hoặc "god controller" tích luỹ trách nhiệm. Mỗi slice có thể dùng tool đúng (Dapper cho read, EF cho write) mà không enforce lựa chọn global.
+- **Khi nào** — App với nhiều feature độc lập (admin tool, hệ thống CRUD-heavy với flow đa dạng); team tổ chức theo feature; project greenfield muốn defer abstraction.
+- **Ở đâu** — Style toàn hệ thống trên trục *logic* (alternative cho N-Layer). Thường bên trong shell Clean Architecture ("Clean Slice"). Pair với MediatR + Pipeline Behavior + FluentValidation như combo canonical .NET.
+
+---
+
 ## Mục lục
 
 1. [Vertical Slice Architecture là gì?](#1-vertical-slice-architecture-là-gì)

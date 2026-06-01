@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — **Outbox**: write message vào outbox table trong cùng DB transaction với business data; process background poll và publish. **Inbox**: record ID message đã xử lý để dedupe redelivery. Cùng nhau chúng làm publish + handle effectively exactly-once.
+- **Tại sao** — Không có nó, vấn đề dual-write ("save DB VÀ publish broker") có thể để bạn với row saved không event, hoặc event không row, ở bất kỳ failure mode nào.
+- **Khi nào** — Bất cứ lúc nào service emit integration event từ business operation, đặc biệt trong Saga; bắt buộc nếu at-least-once delivery là default (Kafka, RabbitMQ, Azure Service Bus).
+- **Ở đâu** — Producer side: trong cùng `DbContext` với aggregate. Consumer side: inbox table trong DB consumer, transactional với side effect. Pair với saga và domain event.
+
+---
+
 ## Bài toán Dual-Write
 
 Code ngây thơ:

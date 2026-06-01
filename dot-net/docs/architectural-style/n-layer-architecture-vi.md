@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Stack of layer logic (điển hình Presentation → Application → Domain → Infrastructure) với dependency strict top-down, tất cả chạy trong một process.
+- **Tại sao** — Separation of concern; quen thuộc với gần như mọi dev; minimal ceremony; thân thiện tooling (template Visual Studio default về nó).
+- **Khi nào** — App line-of-business CRUD-heavy nhỏ-tới-vừa; team mới với thiết kế layered; monolith với domain ổn định, hiểu rõ; starting point tự nhiên trước khi quyết định cần Clean.
+- **Ở đâu** — Một *style* trên trục logic. Khác với N-Tier (deploy vật lý) và với Clean (dependency rule driven by principles). Thường deploy 2–3 tier; refactor về Clean nếu domain phức tạp grow.
+
+---
+
 ## Mục lục
 
 1. [N-Layer Architecture là gì?](#1-n-layer-architecture-là-gì)

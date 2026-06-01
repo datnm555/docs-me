@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A sequence of local transactions across multiple services, each with a compensating action that semantically undoes its step when something downstream fails — orchestrated (central coordinator) or choreographed (event-driven).
+- **Why** — Distributed ACID transactions (2PC) are operationally fragile across microservices. Sagas trade strict atomicity for *eventual* atomicity by making every step idempotent and compensable.
+- **When** — A business workflow spans 2+ services, each owning its own data, and you cannot use a single DB transaction. Examples: place order → charge payment → reserve inventory → ship.
+- **Where** — In a microservices system; paired with the Outbox pattern (for reliable publish), Inbox (for idempotent receive), and Domain Events (in the source aggregate). Typically lives next to the service that owns the workflow.
+
+---
+
 ## The Problem
 
 In a monolith, "place order → charge card → reserve inventory → ship" runs in **one database transaction**. If anything fails, you `ROLLBACK`.

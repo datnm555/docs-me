@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tham chiếu language-agnostic cho nguyên lý software-engineering: **DRY**, **KISS**, **YAGNI**, **SoC** (core); **SOLID** (5 nguyên lý OO); **GRASP** (9 nguyên lý responsibility-assignment); cộng LoD, POLA, Fail Fast, Composition over Inheritance, Tell-Don't-Ask, và hơn.
+- **Tại sao** — Nguyên lý là *guideline cho thiết kế tốt* — cái **tại sao** đằng sau mọi pattern và architecture. Internalize chúng và bạn sẽ reinvent nửa pattern theo nhu cầu; ignore chúng và kể cả pattern tốt nhất cũng không save hệ thống.
+- **Khi nào** — Mọi design decision; code review ("nguyên lý nào cái này vi phạm?"); giải thích trade-off cho teammate junior; quyết định liệu áp dụng pattern hay không.
+- **Ở đâu** — Trên pattern và architecture trong hierarchy. Foundation cho `oop/`, `dot-net/docs/design-pattern/`, `dot-net/docs/architectural-style/`, và `dot-net/docs/ddd/`.
+
+---
+
 ## Mục lục
 
 1. [Nguyên lý là gì?](#1-nguyên-lý-là-gì)

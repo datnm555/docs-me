@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Bốn nguyên lý core được trích dẫn nhiều nhất: **DRY** (Don't Repeat Yourself), **KISS** (Keep It Simple, Stupid), **YAGNI** (You Aren't Gonna Need It), **SoC** (Separation of Concerns).
+- **Tại sao** — Bốn cái này pull chống lẫn nhau trong tension productive — DRY đẩy về abstraction, KISS/YAGNI kéo lại khỏi over-abstraction, SoC bảo bạn vẽ line ở đâu khi bạn abstract.
+- **Khi nào** — Mọi quyết định refactor; mọi "có nên extract cái này?"; mọi "có nên thêm feature future-proofing?"; mọi code review nơi ai đó đang over-engineer.
+- **Ở đâu** — Starting point cho mọi nguyên lý khác trong folder này. SOLID, GRASP, và các nguyên lý bổ sung đều reinforce hoặc constrain bốn cái này.
+
+---
+
 ## Mục lục
 
 1. [DRY — Don't Repeat Yourself](#1-dry--dont-repeat-yourself)

@@ -11,6 +11,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — So sánh ba bên và decision guide cho **N-Layer**, **N-Tier**, và **Clean** Architecture — mỗi cái là gì, ngồi trên trục nào, ưu, nhược, chọn cái nào khi nào.
+- **Tại sao** — Ba cái này thường bị conflate (đặc biệt N-Layer ↔ N-Tier). So sánh chỉ chúng không phải alternative — trả lời câu hỏi khác và phần lớn app dùng *cả ba* cùng nhau.
+- **Khi nào** — Khởi đầu hệ thống mới; giải thích khác biệt cho team; chọn default đúng cho app CRUD vs. domain phức tạp.
+- **Ở đâu** — Đọc **trước** deep-dive per-style trong folder này. Cho version năm-bên bao gồm Hexagonal và Vertical Slice, xem `five-architectures-comparison-and-mixing-vi.md`.
+
+---
+
 ## Mục lục
 
 1. [TL;DR — Chúng sống trên trục khác nhau](#1-tldr--chúng-sống-trên-trục-khác-nhau)

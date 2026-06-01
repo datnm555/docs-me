@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Các pattern từ *PoEAA* của Fowler (2002) cộng follow-on driven by community — **Repository**, **Unit of Work**, **IoC/DI**, **Service Lifetimes**, **Data Access pattern** (Lazy/Eager Loading, Identity Map, Active Record, Data Mapper), và **Specification/Mediator/CQRS/Result/Options/Decorator pipeline**.
+- **Tại sao** — Chúng ngồi giữa GoF (mức class) và architectural style (mức hệ thống). Chúng shape cách application tương tác với data và application khác.
+- **Khi nào** — Build application service, code data-access, wire dependency; quyết định giữa Active Record và Data Mapper; chọn style Repository; cấu trúc cross-cutting concern.
+- **Ở đâu** — Sống ở **Application / Infrastructure** layer của kiến trúc Clean/Hexagonal. Nhiều cái đã được implement trong .NET hiện đại (`DbContext` là Unit of Work, `DbSet<T>` là generic Repository, MediatR là Mediator, `IOptions<T>` là pattern Options).
+
+---
+
 ## "Enterprise Pattern" là gì?
 
 * **Phạm vi:** layer data-access, layer application service, các biên presentation/integration của một enterprise application điển hình.

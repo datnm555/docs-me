@@ -6,6 +6,15 @@ Each summary is opinionated: it captures **what the book teaches**, **how the au
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Navigation map for summaries of influential software-engineering books — the ideas, examples, and rules distilled into recall-friendly notes.
+- **Why** — Lets you find the right book quickly, recall key arguments before an interview or design review, and pull canonical examples into discussions without re-reading 500 pages.
+- **When** — Starting a topic and need orientation; revisiting before an interview; teaching a teammate; comparing what different authors say about the same idea.
+- **Where** — Top-level entry point into `books/`; cross-links into `dot-net/docs/`, `principles/`, and `oop/` for the deeper repo content.
+
+---
+
 ## Index
 
 | Book                                                                                  | Authors                          | Year | Focus                                                                | File                                                  |

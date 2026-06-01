@@ -5,6 +5,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The 9 GRASP principles (Craig Larman): **Information Expert**, **Creator**, **Controller**, **Low Coupling**, **High Cohesion**, **Polymorphism**, **Pure Fabrication**, **Indirection**, **Protected Variations**.
+- **Why** — Where SOLID asks *"is this class designed well?"*, GRASP asks the more fundamental question: ***"which class should this responsibility belong to?"***. Together they cover both the design and the allocation of responsibility.
+- **When** — Deciding where to put a new method; reviewing a "Feature Envy" smell; explaining why a Repository (Pure Fabrication) doesn't represent a real domain concept; designing a Mediator (Indirection).
+- **Where** — Class-level responsibility assignment. Foundation for understanding *why* the GoF patterns are shaped the way they are.
+
+---
+
 ## Table of Contents
 
 1. [Information Expert](#1-information-expert)

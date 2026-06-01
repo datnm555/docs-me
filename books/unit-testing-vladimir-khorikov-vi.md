@@ -10,6 +10,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tóm tắt sách Khorikov 2020 — bốn trụ cột của good unit test (regression protection × resistance to refactoring × fast feedback × maintainability), trường phái classical vs. London, vocabulary chính xác mock-vs-stub, và boundary giữa unit và integration test.
+- **Tại sao** — End debate kinh điển "có nên dùng mock?" với framework measurable objectively và cho biết tại sao phần lớn suite test over-mocked thành phanh trên project.
+- **Khi nào** — Test của bạn chậm, fragile, hoặc break mỗi refactor; introduce mock vào project mới; quyết định cái gì đặt trong unit test vs. integration test vs. E2E.
+- **Ở đâu** — Pair với `dot-net/docs/architectural-style/hexagonal-architecture-vi.md` (pattern functional core / imperative shell maximize testability) và `dot-net/docs/enterprise-pattern/ioc-di-vi.md` (shape DI làm test khả thi).
+
+---
+
 ## Mục lục
 
 1. [Về cuốn sách](#1-về-cuốn-sách)

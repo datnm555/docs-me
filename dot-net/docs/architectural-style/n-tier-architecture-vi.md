@@ -10,6 +10,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Split application qua **N tier vật lý** (process / container / máy) giao tiếp qua network. 3-tier kinh điển = browser/UI + application server + database.
+- **Tại sao** — Scale độc lập per tier; cô lập security (DB trong private subnet); cô lập fault (cache outage ≠ app down); compliance boundary; lựa chọn technology per tier.
+- **Khi nào** — Cần scale hoặc harden một tier độc lập; yêu cầu regulatory ép network segmentation; nhiều team own tier khác.
+- **Ở đâu** — Trục *vật lý* — trực giao với N-Layer (logic) và Clean (principles). Bất kỳ style nào có thể chạy 1, 2, 3, hay N tier. Thường pair với tổ chức code N-Layer bên trong application tier.
+
+---
+
 ## Mục lục
 
 1. [N-Tier Architecture là gì?](#1-n-tier-architecture-là-gì)

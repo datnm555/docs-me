@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The four most-cited core principles: **DRY** (Don't Repeat Yourself), **KISS** (Keep It Simple, Stupid), **YAGNI** (You Aren't Gonna Need It), **SoC** (Separation of Concerns).
+- **Why** — These four pull against each other in productive tension — DRY pushes toward abstraction, KISS/YAGNI pull back from over-abstraction, SoC tells you where to draw the line when you do abstract.
+- **When** — Every refactor decision; every "should I extract this?"; every "should I add this future-proofing feature?"; every code review where someone is over-engineering.
+- **Where** — The starting point for every other principle in this folder. SOLID, GRASP, and the additional principles all reinforce or constrain these four.
+
+---
+
 ## Table of Contents
 
 1. [DRY — Don't Repeat Yourself](#1-dry--dont-repeat-yourself)

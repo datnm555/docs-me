@@ -14,6 +14,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Hybrid thực dụng: **Clean Architecture bên ngoài, Vertical Slice bên trong**. Clean enforce Dependency Rule qua project boundary (Domain ← Application ← Infrastructure ← Web); Vertical Slice tổ chức *Application* layer thành một folder per use case.
+- **Tại sao** — Có discipline dependency-rule của Clean (Domain framework-free, Infrastructure replaceable) *cộng* feature cohesion của Vertical Slice (một folder per use case, không god service).
+- **Khi nào** — Project .NET greenfield hiện đại (2025+); evolve từ N-Layer hoặc Clean về feature-first organization; team đủ mature cho MediatR + Pipeline Behavior + FluentValidation.
+- **Ở đâu** — Default khuyến nghị hiện tại cho project .NET mới. Implement Dependency Rule với project reference; tổ chức Application theo feature; pair tự nhiên với CQRS, DDD aggregate, và deploy 3-tier.
+
+---
+
 ## Mục lục
 
 1. [Clean Slice là gì?](#1-clean-slice-là-gì)

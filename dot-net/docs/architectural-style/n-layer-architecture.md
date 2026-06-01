@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A stack of logical layers (typically Presentation → Application → Domain → Infrastructure) with strict top-down dependencies, all running in one process.
+- **Why** — Separation of concerns; familiar to almost every developer; minimal ceremony; tooling-friendly (Visual Studio templates default to it).
+- **When** — Small-to-medium CRUD-heavy line-of-business apps; teams new to layered design; monoliths with stable, well-understood domains; the natural starting point before deciding you need Clean.
+- **Where** — One *style* on the logical axis. Distinct from N-Tier (physical deployment) and from Clean (principles-driven dependency rule). Often deployed as 2–3 tiers; refactor toward Clean if the domain grows complex.
+
+---
+
 ## Table of Contents
 
 1. [What Is N-Layer Architecture?](#1-what-is-n-layer-architecture)

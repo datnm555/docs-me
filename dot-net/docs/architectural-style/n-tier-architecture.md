@@ -8,6 +8,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Splitting an application across **N physical tiers** (processes / containers / machines) that communicate over a network. Classic 3-tier = browser/UI + application server + database.
+- **Why** — Independent scaling per tier; security isolation (DB in a private subnet); fault isolation (cache outage ≠ app down); compliance boundaries; per-tier technology choice.
+- **When** — You need to scale or harden one tier independently of others; regulatory requirements force network segmentation; multiple teams own different tiers.
+- **Where** — *Physical* axis — orthogonal to N-Layer (logical) and Clean (principles). Any of those styles can run on 1, 2, 3, or N tiers. Often paired with N-Layer code organization inside the application tier.
+
+---
+
 ## Table of Contents
 
 1. [What Is N-Tier Architecture?](#1-what-is-n-tier-architecture)

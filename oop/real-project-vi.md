@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Bài tập thiết kế full end-to-end: module checkout e-commerce model với cả bốn trụ cột OO, layered thành Domain / Application / Infrastructure / API, với cross-reference explicit tới nguyên lý nào mỗi mảnh phục vụ.
+- **Tại sao** — Pattern và nguyên lý chỉ click khi bạn thấy chúng compose trong codebase thật. Walkthrough này kết nối "Strategy" / "SRP" / "DIP" tới dòng code nơi chúng sống.
+- **Khi nào** — Sau khi đọc `pillars-vi.md` và `concepts-vi.md`, trước khi tackle content `dot-net/docs/` sâu. Hoặc như reference example khi thiết kế module tương tự.
+- **Ở đâu** — Layout solution giả định — nhưng cấu trúc (Domain ← Application ← Infrastructure ← Web) là shape Clean/Hexagonal canonical bạn sẽ thấy trong project .NET thật.
+
+---
+
 ## Mục lục
 
 1. [Yêu cầu](#1-yêu-cầu)

@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tham chiếu thực hành end-to-end cho OOP: bốn trụ cột (Encapsulation, Abstraction, Inheritance, Polymorphism), construct cấp ngôn ngữ, walkthrough e-commerce checkout thật, và cheat sheet interview.
+- **Tại sao** — OOP là paradigm default cho enterprise software vì nó quản lý dependency và hấp thụ change well. Các note này biến trụ cột trừu tượng thành vocabulary bạn có thể áp dụng trong code review.
+- **Khi nào** — Trước khi học design pattern hoặc DDD; bất cứ khi nào team tranh luận inheritance vs. composition; refresh fundamental trước interview.
+- **Ở đâu** — Language-agnostic (ví dụ trong C# nhưng idea áp dụng cho Java/TypeScript/Kotlin/Python). Foundation cho `principles/` (SOLID, GRASP) và `dot-net/docs/design-pattern/` (GoF 23).
+
+---
+
 ## Mục lục
 
 1. [OOP là gì?](#1-oop-là-gì)

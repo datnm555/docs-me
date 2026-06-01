@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Năm nguyên lý SOLID: **S**ingle Responsibility, **O**pen/Closed, **L**iskov Substitution, **I**nterface Segregation, **D**ependency Inversion — phổ biến bởi Robert C. Martin khoảng 2000.
+- **Tại sao** — Năm cái này cùng nhau biến code OO ad-hoc thành code *dễ thay đổi, dễ test, và dễ hiểu*. Phần lớn smell "code tệ" (god class, shotgun surgery, fragile base class, singleton untestable) vi phạm một trong các nguyên lý này.
+- **Khi nào** — Mỗi quyết định thiết kế class; giải thích tại sao refactor cần; reject PR thêm `if (type == ...)` switch khác.
+- **Ở đâu** — Mức class (so với GRASP ở mức responsibility-assignment, và component principle ở mức module). Dependency Inversion đặc biệt là nguyên lý chịu lực đằng sau Clean Architecture, Hexagonal, và DI.
+
+---
+
 ## Mục lục
 
 1. [S — Single Responsibility Principle (SRP)](#1-s--single-responsibility-principle-srp)

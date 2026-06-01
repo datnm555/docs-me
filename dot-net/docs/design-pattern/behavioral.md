@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The 11 GoF behavioral patterns: **Chain of Responsibility**, **Command**, **Interpreter**, **Iterator**, **Mediator**, **Memento**, **Observer**, **State**, **Strategy**, **Template Method**, **Visitor** — concerned with how objects communicate and distribute work.
+- **Why** — They encapsulate algorithms (Strategy), notifications (Observer), state machines (State), traversal (Iterator), and request processing (Chain of Responsibility / Command / Mediator) — giving you flexible, testable alternatives to long `switch` ladders and tangled callbacks.
+- **When** — Algorithms vary at runtime (Strategy); many objects must react to one change (Observer); behavior changes by lifecycle state (State); you need queueable / loggable / undoable actions (Command); request must flow through optional handlers (Chain of Responsibility).
+- **Where** — Class/object level. In modern .NET: ASP.NET Core middleware = Chain of Responsibility; MediatR = Mediator + Command; `event` / `IObservable<T>` = Observer; LINQ `IEnumerable<T>` = Iterator; `BackgroundService.ExecuteAsync` = Template Method; Stateless library = State; Roslyn `SyntaxVisitor` = Visitor.
+
+---
+
 ## Table of Contents
 
 1. [Chain of Responsibility](#1-chain-of-responsibility)

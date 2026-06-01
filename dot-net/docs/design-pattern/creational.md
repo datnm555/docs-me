@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The 5 GoF creational patterns: **Singleton**, **Factory Method**, **Abstract Factory**, **Builder**, **Prototype** — concerned with how objects are constructed.
+- **Why** — Naïve `new SomeClass()` couples clients to concrete types. Creational patterns abstract instantiation so the right type can be chosen at runtime, complex construction can be hidden, and a single instance can be enforced.
+- **When** — Construction involves runtime decisions (which subtype?), many optional parameters, expensive setup, or families of related types that must stay consistent.
+- **Where** — Class level. In modern .NET, the DI container already implements Singleton + Factory; the BCL provides `*Builder` types (`StringBuilder`, `WebApplicationBuilder`, EF model builder); `record` + `with` gives Prototype for free.
+
+---
+
 ## Table of Contents
 
 1. [Singleton](#1-singleton)

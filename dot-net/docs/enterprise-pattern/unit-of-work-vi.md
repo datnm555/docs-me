@@ -8,6 +8,15 @@ Tóm gọn: Unit of Work **track những gì đã thay đổi** trong một busi
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Pattern **track changes** tới nhiều object trong một business operation và **commit chúng atomic** như một transaction ở cuối.
+- **Tại sao** — Không có nó, application code làm N write một lần và bất kỳ failure để hệ thống inconsistent. Với nó, mọi business operation là all-or-nothing.
+- **Khi nào** — Bất cứ lúc nào business operation modify nhiều hơn một entity / aggregate trong một transaction. `DbContext` của EF Core đã implement cái này — bạn thường không cần viết `IUnitOfWork` riêng.
+- **Ở đâu** — Ngồi ở **Application** layer (use-case call `SaveChangesAsync` một lần ở cuối). Pair với một repository per aggregate root. Cho cross-service transaction, dùng Saga thay vào (`../architectural-pattern/saga-vi.md`).
+
+---
+
 ## Bài toán nó giải
 
 Không có Unit of Work, application code chịu trách nhiệm track mọi thay đổi và save từng cái rõ ràng:

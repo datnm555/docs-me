@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Taxonomy của "pattern" trong software, sort theo scope: methodology (DDD), architectural style (Layered, Hexagonal, Clean, EDA), architectural pattern (Saga, CQRS, Outbox), enterprise pattern (Repository, Unit of Work), DDD pattern (tactical + strategic), GoF design pattern, và idiom ngôn ngữ.
+- **Tại sao** — Từ "pattern" được dùng ở 5 tầng khác. Map này ngăn so sánh Saga với Decorator như thể chúng là alternative — chúng sống trên trục khác.
+- **Khi nào** — Bất cứ khi nào ai đó dùng term overloaded ("chúng tôi dùng DDD", "chúng tôi có microservices", "chúng tôi follow Repository"); navigate phần còn lại docs .NET; dạy teammate tìm gì ở đâu.
+- **Ở đâu** — Entry point top-level cho `dot-net/docs/`. Mọi doc khác trong folder này reach được từ bảng taxonomy.
+
+---
+
 ## Phân loại Pattern (Taxonomy)
 
 | Tầng (Level)                   | Folder / File                                      | Ví dụ                                                                                                  |
@@ -50,6 +59,7 @@
 * **[`architectural-style/`](./architectural-style/)** — Lựa chọn cấu trúc toàn hệ thống (EDA, Hexagonal, Clean, Onion).
 * **[`enterprise-pattern/`](./enterprise-pattern/)** — Pattern cho data access và application layer (Repository, Unit of Work, Specification).
 * **[`ddd/`](./ddd/)** — Domain-Driven Design như một methodology, cùng các tactical và strategic pattern của nó.
+* **[`concurrency/`](./concurrency/)** — Race condition, chiến lược locking, coordination distributed — concern concurrency cắt qua các folder khác.
 * **Các file architectural-style deep-dive cấp top** (mỗi file 1 style):
   * [`n-layer-architecture.md`](./n-layer-architecture.md)
   * [`n-tier-architecture.md`](./n-tier-architecture.md)

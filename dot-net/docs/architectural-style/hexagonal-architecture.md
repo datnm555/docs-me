@@ -10,6 +10,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Alistair Cockburn's "Ports & Adapters" style (~2005). An application core surrounded by **ports** (interfaces owned by the core) that external technologies plug into via **adapters**. Driving adapters on the input side, driven adapters on the output side — symmetric.
+- **Why** — The Core depends on nothing external; every technology (HTTP, DB, queue, email) is replaceable. The killer feature: test the Core with in-memory fake adapters — no DB, no web host, sub-second feedback.
+- **When** — Multiple driving channels (HTTP API + CLI + scheduled jobs + tests); integration-heavy systems (many external partners/APIs); DDD-oriented teams; long-lived systems.
+- **Where** — System-wide style on the *principles* axis. Conceptual ancestor of Onion and Clean (same essence, different vocabulary). Pair with Vertical Slice inside the Core and N-Tier deployment outside.
+
+---
+
 ## Table of Contents
 
 1. [What Is Hexagonal Architecture?](#1-what-is-hexagonal-architecture)

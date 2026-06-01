@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Bốn trụ cột: **Encapsulation** (ẩn state đằng sau behavior), **Abstraction** (expose cái gì, ẩn cách), **Inheritance** (specialize type có sẵn), **Polymorphism** (một interface, nhiều behavior runtime).
+- **Tại sao** — Bốn idea này cùng nhau giải thích *mọi* OO design decision. Master chúng và pattern như Strategy, Template Method, Decorator thành tự nhiên thay vì memorize.
+- **Khi nào** — Trước khi học design pattern, SOLID, hoặc DDD; giải thích tại sao `if (x is Y)` là smell; quyết định giữa subclass và composition.
+- **Ở đâu** — Fundamental ngôn ngữ (keyword `class`, `interface`, `virtual` của ngôn ngữ là cách mỗi trụ cột show up). Foundation cho mọi thứ trong `principles/`, `design-pattern/`, và `ddd/`.
+
+---
+
 ## Mục lục
 
 1. [Encapsulation](#1-encapsulation)

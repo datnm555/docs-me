@@ -10,6 +10,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tóm tắt edition 2 năm 2021 của Newman — định nghĩa work của "microservice" (deployable độc lập, model quanh business domain, coupling network), modeling qua bounded context, splitting monolith, saga vs. orchestration, CI/CD, observability, security, resilience, scaling, và Conway's Law.
+- **Tại sao** — Cho biết khi nào (và đặc biệt khi nào **không**) dùng microservices, maturity vận hành nào required, và pattern nào không thương lượng một khi commit (Outbox, saga, idempotency, distributed tracing).
+- **Khi nào** — Đang cân nhắc microservices; split monolith hiện có; chạy distributed system và cảm pain; audit liệu "microservices" của bạn thực sự là distributed monolith.
+- **Ở đâu** — Pair với `dot-net/docs/architectural-pattern/` (saga, outbox, cqrs, event-sourcing), `dot-net/docs/ddd/strategic-patterns-vi.md` (bounded context), và `books/domain-driven-design-eric-evans-vi.md` (foundation modeling).
+
+---
+
 ## Mục lục
 
 1. [Về cuốn sách](#1-về-cuốn-sách)

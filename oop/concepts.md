@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Language-level constructs that implement the four pillars: class & object, field/property/method, constructor, `this`/`base`/`static`, abstract class vs. interface, `virtual`/`override`/`sealed`, value vs. reference types, records, generics, equality.
+- **Why** — Pillars are abstract; constructs are how you actually write them. Knowing which keyword expresses which intent is the difference between code that survives refactors and code that doesn't.
+- **When** — Daily coding decisions: should this be a record or class? When do I `override` vs. `new`? Should I `sealed` this? Why does this struct copy?
+- **Where** — Every C# (and Java/Kotlin/TypeScript) source file. Pair with `pillars.md` (the *why*) and `principles/` (the rules that judge whether you used these correctly).
+
+---
+
 ## Table of Contents
 
 1. [Class & Object](#1-class--object)

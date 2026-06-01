@@ -10,6 +10,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A digest of Eric Evans' 2003 Blue Book — Ubiquitous Language, Model-Driven Design, the tactical patterns (Entity, Value Object, Aggregate, Domain Service, Repository, Factory, Domain Event), and the strategic patterns (Bounded Context, Context Map, Anti-Corruption Layer, Core/Supporting/Generic subdomains).
+- **Why** — Gives you the vocabulary and discipline to model complex domains so the code matches how domain experts speak — eliminating the translation friction that produces 90% of "but my code does the wrong thing" bugs.
+- **When** — The domain is complex and central to the business (banking, insurance, logistics, healthcare); two teams use the same word for different things; you're integrating with a legacy mess.
+- **Where** — Pair with `dot-net/docs/ddd/` (.NET treatment of tactical + strategic patterns), `books/clean-architecture-robert-martin.md` (the architectural shell that DDD's domain layer lives inside), and `books/building-microservices-sam-newman.md` (one bounded context per service).
+
+---
+
 ## Table of Contents
 
 1. [About the Book](#1-about-the-book)

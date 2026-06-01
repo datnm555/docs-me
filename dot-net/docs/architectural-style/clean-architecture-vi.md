@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Tổng hợp prescriptive của Robert C. Martin về Hexagonal + Onion + Use Cases. Bốn vòng đồng tâm (Entity ← Use Case ← Interface Adapter ← Frameworks & Drivers) với một rule tuyệt đối: **source-code dependency chỉ trỏ vào trong**.
+- **Tại sao** — Giữ business policy giá trị cao, thay đổi chậm độc lập với technology giá trị thấp, biến động (DB, web framework, UI). Database/UI/framework là "detail" — không phải foundation.
+- **Khi nào** — Hệ thống sống lâu với business rule phức tạp hoặc evolving; nhiều kênh delivery (web + mobile + worker + CLI); team practice DDD; refactor legacy về maintainability.
+- **Ở đâu** — Style toàn hệ thống trên trục *principles*. Implement qua project N-Layer (Domain → Application → Infrastructure → Web). Pair tự nhiên với DDD, CQRS, MediatR, và Vertical Slice bên trong Application layer ("Clean Slice").
+
+---
+
 ## Mục lục
 
 1. [Idea lớn](#1-idea-lớn)

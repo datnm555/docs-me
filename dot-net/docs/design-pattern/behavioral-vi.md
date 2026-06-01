@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — 11 GoF behavioral pattern: **Chain of Responsibility**, **Command**, **Interpreter**, **Iterator**, **Mediator**, **Memento**, **Observer**, **State**, **Strategy**, **Template Method**, **Visitor** — liên quan đến cách object giao tiếp và phân phối work.
+- **Tại sao** — Chúng encapsulate thuật toán (Strategy), notification (Observer), state machine (State), traversal (Iterator), và request processing (Chain of Responsibility / Command / Mediator) — cho bạn alternative linh hoạt, testable cho switch ladder dài và callback rối.
+- **Khi nào** — Thuật toán vary runtime (Strategy); nhiều object phải react với một thay đổi (Observer); behavior thay đổi theo lifecycle state (State); cần action có thể queue / log / undo (Command); request phải flow qua handler tuỳ chọn (Chain of Responsibility).
+- **Ở đâu** — Mức class/object. Trong .NET hiện đại: ASP.NET Core middleware = Chain of Responsibility; MediatR = Mediator + Command; `event` / `IObservable<T>` = Observer; LINQ `IEnumerable<T>` = Iterator; `BackgroundService.ExecuteAsync` = Template Method; library Stateless = State; Roslyn `SyntaxVisitor` = Visitor.
+
+---
+
 ## Mục lục
 
 1. [Chain of Responsibility](#1-chain-of-responsibility)

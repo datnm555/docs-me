@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Các nguyên lý khác mọi engineer đang làm việc cuối cùng cũng internalize: **Law of Demeter**, **Composition over Inheritance**, **Tell, Don't Ask**, **POLA** (Least Astonishment), **Fail Fast**, **Convention over Configuration**, **Boy Scout Rule**, **Encapsulation**, **Least Privilege**, **Single Source of Truth**, **Curly's Law**, **Hollywood Principle**, **Worse Is Better**.
+- **Tại sao** — Không cái nào là phần của SOLID hay GRASP, nhưng cùng nhau chúng cover các khía cạnh *behavioral*, *organizational*, và *defensive* của code tốt mà nguyên lý acronym nổi tiếng miss.
+- **Khi nào** — Viết hoặc review code non-trivial nào. Các nguyên lý này catch smell mà SOLID một mình không đặt tên (train wreck, anemic model, test time-coupled, global ẩn).
+- **Ở đâu** — Checklist code review; conversation mentor; quyết định coding hằng ngày. Phần lớn chúng reinforce hoặc refine rule SOLID và GRASP từ góc khác.
+
+---
+
 ## Mục lục
 
 1. [Law of Demeter (LoD)](#1-law-of-demeter-lod)

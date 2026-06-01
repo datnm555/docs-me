@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — Robert C. Martin's prescriptive synthesis of Hexagonal + Onion + Use Cases. Four concentric rings (Entities ← Use Cases ← Interface Adapters ← Frameworks & Drivers) with one absolute rule: **source-code dependencies point inward only**.
+- **Why** — Keeps high-value, slow-changing business policy independent of low-value, volatile technology (DB, web framework, UI). Database/UI/framework are "details" — not the foundation.
+- **When** — Long-lived systems with complex or evolving business rules; multiple delivery channels (web + mobile + worker + CLI); teams that practice DDD; refactoring legacy toward maintainability.
+- **Where** — System-wide style on the *principles* axis. Implemented via N-Layer projects (Domain → Application → Infrastructure → Web). Pairs naturally with DDD, CQRS, MediatR, and Vertical Slice inside the Application layer ("Clean Slice").
+
+---
+
 ## Table of Contents
 
 1. [The Big Idea](#1-the-big-idea)

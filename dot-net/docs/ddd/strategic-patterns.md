@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The system-level half of DDD: **Ubiquitous Language** (one vocabulary per context), **Bounded Context** (explicit boundary for one model), **Context Map** (diagram of how contexts relate), **Anti-Corruption Layer** (translate when models don't fit), plus the nine context-mapping relationships (Partnership, Shared Kernel, Customer/Supplier, Conformist, ACL, Open Host Service, Published Language, Separate Ways, Big Ball of Mud).
+- **Why** — Tactical patterns work inside *one* model. The moment you have two teams, multiple services, or legacy systems, you have multiple models that will conflict. Strategic design names the boundaries and the relationships between them.
+- **When** — Multi-team systems; companies with shared terminology that means different things to different departments; integration with legacy or third-party systems; deciding microservices boundaries.
+- **Where** — Above tactical patterns; informs both *which* services to build (one per Bounded Context) and *how* they integrate (Context Map). Pair with Sam Newman's microservices modeling.
+
+---
+
 ## Why Strategic Comes First
 
 In a small app, you can get away with tactical DDD (Aggregates, Value Objects) without strategic. But the moment two teams ship together — or a system grows past one model — strategic DDD becomes the lifeline:

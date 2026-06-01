@@ -10,6 +10,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A digest of Khorikov's 2020 book — the four pillars of a good unit test (regression protection × resistance to refactoring × fast feedback × maintainability), classical vs. London schools, the precise mock-vs-stub vocabulary, and the boundary between unit and integration tests.
+- **Why** — Ends the perennial "should I use mocks?" debate with an objectively measurable framework and tells you why most over-mocked test suites become a brake on the project.
+- **When** — Your tests are slow, fragile, or break on every refactor; you're introducing mocks to a new project; you're deciding what to put in unit tests vs. integration tests vs. E2E.
+- **Where** — Pair with `dot-net/docs/architectural-style/hexagonal-architecture.md` (the functional core / imperative shell pattern that maximizes testability) and `dot-net/docs/enterprise-pattern/ioc-di.md` (the DI shape that makes tests possible).
+
+---
+
 ## Table of Contents
 
 1. [About the Book](#1-about-the-book)

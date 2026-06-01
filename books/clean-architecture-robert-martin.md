@@ -10,6 +10,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A digest of Uncle Bob's 2017 book — the Dependency Rule, the four-ring architecture diagram, the six component principles (REP/CCP/CRP/ADP/SDP/SAP), the Humble Object pattern, and the claim that the database, web, and framework are all "details".
+- **Why** — Gives you a *first-principles* argument for inversion-driven layered design, so you can defend (or rebuild) architecture decisions instead of cargo-culting a folder layout.
+- **When** — Long-lived systems where the cost of change is high; modernizing a legacy monolith; deciding what to mock and what to test; arguing with someone who thinks "the database is the foundation".
+- **Where** — Pair with `dot-net/docs/architectural-style/clean-architecture.md` (the .NET implementation), `principles/solid.md` (the load-bearing principle), and `books/domain-driven-design-eric-evans.md` (the natural domain-modeling companion).
+
+---
+
 ## Table of Contents
 
 1. [About the Book](#1-about-the-book)

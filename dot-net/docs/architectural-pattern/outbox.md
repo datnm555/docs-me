@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — **Outbox**: write the message to an outbox table in the same DB transaction as the business data; a background process polls and publishes. **Inbox**: record processed message IDs to deduplicate redeliveries. Together they make publish + handle effectively exactly-once.
+- **Why** — Without it, the dual-write problem ("save to DB AND publish to broker") can leave you with a saved row and no event, or an event and no row, in any failure mode.
+- **When** — Any time a service emits an integration event from a business operation, especially in a Saga; mandatory if at-least-once delivery is your default (Kafka, RabbitMQ, Azure Service Bus).
+- **Where** — Producer side: in the same `DbContext` as the aggregate. Consumer side: an inbox table in the consumer's DB, transactionally with side effects. Pair with sagas and domain events.
+
+---
+
 ## The Dual-Write Problem
 
 Naive code:

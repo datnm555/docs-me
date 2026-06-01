@@ -10,6 +10,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — A digest of Freeman & Robson's friendly tour of the 14 GoF patterns Head First covers in depth (Strategy, Observer, Decorator, Factory, Singleton, Command, Adapter, Facade, Template Method, Iterator, Composite, State, Proxy, Compound/MVC) plus the 9 OO design principles the book accumulates chapter by chapter.
+- **Why** — Gives you the patterns *plus* the running stories that make them memorable; bridges the gap between abstract pattern definitions (GoF) and recognizing the pattern in real code (your codebase).
+- **When** — First time learning design patterns; before a system-design interview; when you want a canonical example to anchor a code-review argument ("this is Decorator, not Adapter — here's why").
+- **Where** — Pair with `dot-net/docs/design-pattern/` (.NET implementations of all 23), `principles/` (the 9 OO principles in depth), and `oop/` (the pillars the book assumes).
+
+---
+
 ## Table of Contents
 
 1. [About the Book](#1-about-the-book)

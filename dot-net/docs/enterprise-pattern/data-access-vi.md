@@ -20,6 +20,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Các pattern data-access từ PoEAA: **Repository**, **Unit of Work**, **Lazy / Eager / Explicit Loading**, **Identity Map**, **Active Record vs. Data Mapper**, **Query Object** và **Specification**.
+- **Tại sao** — Cho bạn vocabulary chính xác để nói về cách domain code reach database. Phần lớn bug production trong code data đến từ trộn strategy (lazy-load khi cần eager, generic repo khi cần specific, Active Record khi cần Data Mapper).
+- **Khi nào** — Bất cứ lúc nào bạn chọn cách load data liên quan, structure query, hoặc wrap ORM. Lựa chọn thường được làm implicit — làm explicit là bước đầu tới fix N+1 query và Cartesian explosion.
+- **Ở đâu** — **Infrastructure** layer (implementation) và boundary **Application/Domain** (interface). EF Core đã implement nhiều cái (Identity Map, Lazy Load qua proxy, Unit of Work qua `DbContext`).
+
+---
+
 ## 1. Repository
 
 > *"Repository làm trung gian giữa domain và data-mapping layer, **hành xử như in-memory collection** của domain object."* — Eric Evans, *DDD*

@@ -4,6 +4,15 @@
 
 ---
 
+## Quick Reference (What · Why · When · Where)
+
+- **What** — The taxonomy of "pattern" in software, sorted by scope: methodology (DDD), architectural style (Layered, Hexagonal, Clean, EDA), architectural pattern (Saga, CQRS, Outbox), enterprise pattern (Repository, Unit of Work), DDD patterns (tactical + strategic), GoF design patterns, and language idioms.
+- **Why** — The word "pattern" gets used at five different levels. This map prevents you from comparing a Saga to a Decorator as if they were alternatives — they live on different axes.
+- **When** — Whenever someone uses an overloaded term ("we use DDD", "we have microservices", "we follow Repository"); when navigating the rest of the .NET docs; when teaching a teammate where to look for what.
+- **Where** — Top-level entry point for `dot-net/docs/`. Every other doc in this folder is reachable from the taxonomy table.
+
+---
+
 ## The Pattern Taxonomy
 
 | Level                          | Folder / File                                      | Examples                                                                                              |
@@ -59,6 +68,7 @@
 * **[`architectural-style/`](./architectural-style/)** — system-wide structural choices. Contains all per-style deep-dives (N-Layer, N-Tier, Clean, Hexagonal, Vertical Slice, Clean Slice), the EDA / EDD deep-dive, and the comparison docs.
 * **[`enterprise-pattern/`](./enterprise-pattern/)** — application-layer patterns (Repository, Unit of Work, IoC/DI, Service Lifetimes, Data Access, Specification, Mediator, …).
 * **[`ddd/`](./ddd/)** — Domain-Driven Design as a methodology, plus its tactical and strategic patterns.
+* **[`concurrency/`](./concurrency/)** — Race conditions, locking strategies, distributed coordination — concurrency concerns that cut across the other folders.
 
 ---
 

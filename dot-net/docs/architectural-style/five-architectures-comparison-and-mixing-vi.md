@@ -16,6 +16,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — So sánh side-by-side năm architectural style trong folder này (**N-Layer, N-Tier, Clean, Vertical Slice, Hexagonal**) cộng guide thực hành **mix** chúng — combination nào work, cái nào không, và cách pick.
+- **Tại sao** — App thật kết hợp nhiều style (vd., Clean + Vertical Slice + 3-tier). Doc này cho bạn combination nào canonical, cái nào anti-mix, và cách migrate giữa chúng.
+- **Khi nào** — Pick stack cho app mới; audit hệ thống hiện có để đặt tên cho cái bạn thực sự có; plan migration từ N-Layer sang Clean Slice.
+- **Ở đâu** — File so sánh comprehensive nhất trong `architectural-style/`. Pair với deep-dive per-style cho detail và `architecture-comparison-vi.md` cho so sánh ba-bên đơn giản hơn.
+
+---
+
 ## Mục lục
 
 ### Part A — So sánh

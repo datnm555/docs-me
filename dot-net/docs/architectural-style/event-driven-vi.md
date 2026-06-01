@@ -6,6 +6,15 @@
 
 ---
 
+## Tham chiếu Nhanh (Cái gì · Tại sao · Khi nào · Ở đâu)
+
+- **Cái gì** — Một **architectural style** trong đó component giao tiếp chủ yếu bằng producing và consuming event (domain event, integration event, event-carried state transfer) qua broker, không phải request/response trực tiếp.
+- **Tại sao** — Decouple producer khỏi consumer về thời gian và identity: thêm subscriber mới không đụng producer, cô lập failure, scale subscriber độc lập, survive outage tạm một phía.
+- **Khi nào** — Nhiều subsystem cần react với một business fact; workflow chạy dài hoặc cross service; muốn thêm behavior mới không đụng service hiện có; đã ở microservices.
+- **Ở đâu** — Lựa chọn style toàn hệ thống (ngồi cạnh N-Layer / Clean / Microservices trên cùng trục). Implementation dùng broker (RabbitMQ, Kafka, Azure Service Bus) cộng pattern (Outbox, Saga, CQRS, Event Sourcing) từ `../architectural-pattern/`.
+
+---
+
 ## EDA có phải Design Pattern không?
 
 **Không.** Event-Driven Architecture là **architectural style** — cùng cấp với Layered, Hexagonal, REST, hay Microservices. **Không phải** GoF design pattern.
